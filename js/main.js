@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded",init);
 
 function init(){
-    getViewData();
-    setViewData();
-    showViewData();
-    createView();
+    getViewData()
     // console.log(viewData);
 }
 

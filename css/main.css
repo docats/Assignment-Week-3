@@ -98,22 +98,29 @@ body{
 .my_box{
     max-width: 1200px;
     margin: 0px auto;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .box_item{
     padding:10px;
+    display: inline-block;
+    width: 260px;
+    vertical-align: top;
 }
 
 .box_item img{
-    vertical-align: bottom;
+    vertical-align: top;
+    width:100%;
 }
 
 .box_item .point{
     background-color:#D3F1FF;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    width:240px;
+    line-height: 1.2;
 }
 
 /* 平板-600 像素 < 螢幕解析度的寬度 <= 1200 像素 */
@@ -127,6 +134,9 @@ body{
     }
     .box_item .point,.box_item img{
         width: 100%;
+    }
+    .box_item .point{
+        padding: 10px 0;
     }
 }
 
